@@ -45,7 +45,17 @@
     <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
     <link
+      href="css/font-roboto.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i"
       rel="stylesheet"
     />
     <link
@@ -253,261 +263,274 @@
       <!--end bar-->
     </div>
     <div class="main-container">
-      <section class="text-center imagebg space--lg" data-overlay="3">
+      <section class="page-navigator">
+        <ul>
+          <li>
+            <a href="#home" class="inner-link" data-title="Home"></a>
+          </li>
+          <li>
+            <a href="#about" class="inner-link" data-title="About"></a>
+          </li>
+          <li>
+            <a
+              href="#industries"
+              class="inner-link"
+              data-title="Industries"
+            ></a>
+          </li>
+          <li>
+            <a href="#showreel" class="inner-link" data-title="Showreel"></a>
+          </li>
+          <li>
+            <a href="#contact" class="inner-link" data-title="Contact"></a>
+          </li>
+        </ul>
+      </section>
+      <section
+        id="home"
+        class="imagebg parallax height-100 text-center"
+        data-overlay="1"
+      >
         <div class="background-image-holder">
-          <img alt="background" src="img/cowork-1.jpg" />
+          <img alt="background" src="img/about-product-4.png" />
         </div>
-        <div class="container">
+        <div class="container pos-vertical-center">
           <div class="row">
-            <div class="col-md-8 col-lg-6">
-              <h1>Meet The Makers</h1>
+            <div class="col-md-6 col-lg-7">
               <p class="lead">
-                4 Mechatronics Engineering students interested in robotics and
-                equal opportunities.
+                Smart Cane:
+                <br class="hidden-xs hidden-sm" />
+                Object Detection for Visually-Impaired
+              </p>
+              <span class="btn__text">
+                How are we making a social impact?
+              </span>
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+      </section>
+      <section id="about" class="switchable parallax imagebg height-100">
+        <div class="background-image-holder">
+          <img alt="background" src="img/about-product-3.png" />
+        </div>
+        <div class="container pos-vertical-center">
+          <div class="row">
+            <div class="col-md-7"></div>
+            <div class="col-md-5 col-lg-4">
+              <div class="switchable__text">
+                <h2>Mechatronics Principles Applied To Old Devices</h2>
+                <p class="lead">
+                  The visually-impaired are 70% more likely to fall and 50% less
+                  likely to take independent trips. The current white cane does
+                  not offer adequate support to avoid obstacles. Traditional
+                  white canes can only provide information in a local area where
+                  the cane is pointing, limiting the ability to detect poor
+                  ground conditions in advance. This limitation can lead to
+                  injuries and subsequently affect their quality of life. Smart
+                  Cane will use robotic sensors and hardware to provide
+                  real-time feedback.
+                </p>
+                <hr class="short" />
+              </div>
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+      </section>
+      <section
+        class="height-100 imagebg parallax"
+        data-overlay="3"
+        id="industries"
+      >
+        <div class="background-image-holder">
+          <img alt="background" src="img/about-product-1.png" />
+        </div>
+        <div class="container pos-vertical-center">
+          <div class="row">
+            <div class="col-md-4">
+              <div
+                class="feature feature-3 boxed boxed--lg boxed--border text-center"
+              >
+                <img alt="background" src="img/IMU.jpg" />
+                <h4>Robotics Sensors</h4>
+                <p>
+                  A self-navigating smart cane that fuses LiDAR, stereo cameras,
+                  and IMU sensor data using Kalman filters.
+                </p>
+              </div>
+              <!--end feature-->
+            </div>
+            <div class="col-md-4">
+              <div
+                class="feature feature-3 boxed boxed--lg boxed--border text-center"
+              >
+                <img alt="background" src="img/software.png" />
+                <h4>Advanced Software</h4>
+                <p>
+                  Road sign detection by implementing the pre-trained deep
+                  learning model, YoloFastestV2 for short-term and long-term
+                  distances
+                </p>
+              </div>
+              <!--end feature-->
+            </div>
+            <div class="col-md-4">
+              <div
+                class="feature feature-3 boxed boxed--lg boxed--border text-center"
+              >
+                <img alt="background" src="img/hardware.png" />
+                <h4>State-of-the-Art Hardware</h4>
+                <p>
+                  Jetson Nano for obstacle detection, raspberry pi for sensor
+                  fusion, powerbank battery, motors for vibration and steering
+                  cane. There will also be an omnidirectional wheel for ease of
+                  travel.
+                </p>
+              </div>
+              <!--end feature-->
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+      </section>
+      <section
+        id="showreel"
+        class="cover height-100 text-center imagebg parallax"
+        data-overlay="1"
+      >
+        <div class="background-image-holder">
+          <img alt="background" src="img/about-product-2.png" />
+        </div>
+        <div class="container pos-vertical-center">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Robotics for Social Change</h1>
+              <div class="modal-instance block">
+                <!--end of modal-container-->
+              </div>
+              <!--end of modal instance-->
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+      </section>
+      <section class="text-center bg--dark" id="contact">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8">
+              <h2>Get In Touch</h2>
+              <p class="lead">
+                Whether you’re designing one for a loved one or to give back to
+                the community, let us know!
               </p>
             </div>
           </div>
-          <!--end of rowan-->
-        </div>
-        <!--end of container-->
-      </section>
-      <section class="switchable feature-large">
-        <div class="container">
-          <div class="row justify-content-around">
-            <div class="col-md-6">
-              <img
-                alt="Image"
-                class="border--round"
-                src="img/Jainish_headshot.JPG"
-              />
-            </div>
-            <div class="col-md-6 col-lg-5">
-              <div class="switchable__text">
-                <div class="text-block">
-                  <h2>Jainish Mehta</h2>
-                  <span>Software Co-Lead &amp; Product Manager</span>
-                </div>
-                <p class="lead">
-                  Having completed internships at NVIDIA and Coinbase has
-                  equipped him with the knowledge to tackle this challenge. He
-                  is eager to learn about embedded programming and deep learning
-                  models for obstacle detection.
-                </p>
-                <ul class="social-list list-inline list--hover">
-                  <li>
-                    <a href="#">
-                      <i class="socicon socicon-mail icon icon--xs"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="socicon socicon-google icon icon--xs"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="socicon socicon-twitter icon icon--xs"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="socicon socicon-instagram icon icon--xs"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
           <!--end of row-->
         </div>
         <!--end of container-->
       </section>
-      <section class="switchable switchable--switch feature-large">
-        <div class="container">
-          <div class="row justify-content-around">
-            <div class="col-md-6">
-              <img
-                alt="Image"
-                class="border--round"
-                src="img/Hogy_headshot.JPG"
-              />
-            </div>
-            <div class="col-md-6 col-lg-5">
-              <div class="switchable__text">
-                <div class="text-block">
-                  <h2>Hogyun Lim</h2>
-                  <span>Mechanical Lead &amp; External Communicator</span>
-                </div>
-                <p class="lead">
-                  He is responsible for the mechanical subsystem, including CAD
-                  and manufacturing of the enclosure and motors.
-                </p>
-                <ul class="social-list list-inline list--hover">
-                  <li>
-                    <a href="#">
-                      <i class="socicon socicon-mail icon icon--xs"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="socicon socicon-google icon icon--xs"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="socicon socicon-twitter icon icon--xs"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="socicon socicon-instagram icon icon--xs"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!--end of row-->
-        </div>
-        <!--end of container-->
-      </section>
-      <section class="switchable feature-large">
-        <div class="container">
-          <div class="row justify-content-around">
-            <div class="col-md-6">
-              <img
-                alt="Image"
-                class="border--round"
-                src="img/Fahim_headshot.JPG"
-              />
-            </div>
-            <div class="col-md-6 col-lg-5">
-              <div class="switchable__text">
-                <div class="text-block">
-                  <h2>Fahim Shahriar</h2>
-                  <span>Co-Lead Software Team</span>
-                </div>
-                <p class="lead">
-                  He is responsible for sensor fusion and SLAM algorithm
-                  implementation, including embedded systems work.
-                </p>
-                <ul class="social-list list-inline list--hover">
-                  <li>
-                    <a href="#">
-                      <i class="socicon socicon-mail icon icon--xs"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="socicon socicon-google icon icon--xs"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="socicon socicon-twitter icon icon--xs"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="socicon socicon-instagram icon icon--xs"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!--end of row-->
-        </div>
-        <!--end of container-->
-      </section>
-      <section class="switchable switchable--switch feature-large">
-        <div class="container">
-          <div class="row justify-content-around">
-            <div class="col-md-6">
-              <img
-                alt="Image"
-                class="border--round"
-                src="img/Bin_headshot.JPG"
-              />
-            </div>
-            <div class="col-md-6 col-lg-5">
-              <div class="switchable__text">
-                <div class="text-block">
-                  <h2>Bin Kim</h2>
-                  <span>Electrical Lead</span>
-                </div>
-                <p class="lead">
-                  He is responsible for electrical wiring and power supply
-                  analysis.
-                </p>
-                <ul class="social-list list-inline list--hover">
-                  <li>
-                    <a href="#">
-                      <i class="socicon socicon-mail icon icon--xs"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="socicon socicon-google icon icon--xs"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="socicon socicon-twitter icon icon--xs"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="socicon socicon-instagram icon icon--xs"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!--end of row-->
-        </div>
-        <!--end of container-->
-      </section>
-      <footer class="footer-3 text-center-xs space--xs bg--dark">
+      <section class="text-center bg--dark">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 text-right text-center-xs">
-              <ul class="social-list list-inline list--hover">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="socicon socicon-google icon icon--xs"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="socicon socicon-twitter icon icon--xs"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="socicon socicon-facebook icon icon--xs"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="socicon socicon-instagram icon icon--xs"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!--end of row-->
-          <div class="row">
-            <div class="col-md-6">
-              <p class="type--fine-print">Get advanced smart cane.</p>
-            </div>
-            <div class="col-md-6 text-right text-center-xs">
-              <span class="type--fine-print"
-                >&copy; <span class="update-year"></span> Smart Cane Inc.</span
+            <div class="col-md-8 col-lg-7">
+              <form
+                class="text-left form-email row"
+                data-success="Thanks for your enquiry, we'll be in touch shortly."
+                data-error="Please fill in all fields correctly."
               >
-              <a class="type--fine-print" href="#">Privacy Policy</a>
-              <a class="type--fine-print" href="#">Legal</a>
+                <div class="col-md-6">
+                  <label>Your Name:</label>
+                  <input type="text" name="Name" class="validate-required" />
+                </div>
+                <div class="col-md-6">
+                  <label>Email Address:</label>
+                  <input
+                    type="email"
+                    name="email"
+                    class="validate-required validate-email"
+                  />
+                </div>
+                <div class="col-md-12">
+                  <label>Message:</label>
+                  <textarea
+                    rows="6"
+                    name="Message"
+                    class="validate-required"
+                  ></textarea>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                  <button
+                    type="submit"
+                    class="btn btn--primary type--uppercase"
+                  >
+                    Send Enquiry
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+      </section>
+      <footer class="text-center space--sm footer-5 bg--dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="heading-block">
+                <ul class="list-inline list--hover">
+                  <li>
+                    <span>Our Company</span>
+                  </li>
+                  <li>
+                    <span>Locations</span>
+                  </li>
+                  <li>
+                    <span>Products</span>
+                  </li>
+                  <li>
+                    <span>Work With Us</span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul class="social-list list-inline list--hover">
+                  <li>
+                    <a href="#">
+                      <i class="socicon socicon-google icon icon--xs"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="socicon socicon-twitter icon icon--xs"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="socicon socicon-facebook icon icon--xs"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <i class="socicon socicon-instagram icon icon--xs"></i>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <span class="type--fine-print">Made in Canada</span>
+              </div>
+              <div>
+                <span class="type--fine-print"
+                  >&copy; <span class="update-year"></span> Smart Cane
+                  Inc.</span
+                >
+                <a class="type--fine-print" href="#">Privacy Policy</a>
+                <a class="type--fine-print" href="#">Legal</a>
+              </div>
             </div>
           </div>
           <!--end of row-->

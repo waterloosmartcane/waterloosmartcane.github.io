@@ -217,152 +217,222 @@
         <!--end bar-->
       </div>
         <div class="main-container">
-            <section class="text-center imagebg space--lg" data-overlay="3">
-                <div class="background-image-holder">
-                    <img alt="background" src="img/Smart_Cane_Example_AboutProduct.JPG" />
+            <section class="imagebg image--light cover cover-blocks bg--secondary ">
+                <div class="background-image-holder hidden-xs">
+                    <img alt="background" src="img/software_backgroud.png" />
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8 col-lg-6">
-                            <h1>Hi, We're Smart Cane</h1>
-                            <p class="lead">
-                                We're building a portable mechatronics feedback system to help visually-impaired individuals.
-                            </p>
+                        <div class="col-md-6 col-lg-5 ">
+                            <div>
+                                <h1>Software Subsystem</h1>
+                                <p class="lead">
+                                   Includes the RGB-D Cameras, IMU, and LiDAR sensor fusion using Kalman filter and SLAM. 
+                                </p>
+                                <hr class="short">
+                            </div>
                         </div>
                     </div>
                     <!--end of row-->
                 </div>
                 <!--end of container-->
             </section>
-            <section class="text-center">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-10 col-lg-8">
-                            <h2>Built on passion and ingenuity</h2>
-                            <p class="lead">
-                                In 2019, 1.2 million Canadians had some form of visual loss, while 4.1% of the group is blind. The visually impaired are also 50% less likely to take independent trips and 70% more likely to fall as the current white cane does not support them as they traverse areas with unknown or difficult obstacles and terrains and general wayfinding indoors and outdoors. Traditional white canes' object detection capabilities are limited to the physical range of the cane.  This can lead to falls and other injuries that severely hinders their quality of life.
-                            </p>
-                        </div>
-                    </div>
-                    <!--end of row-->
-                </div>
-                <!--end of container-->
-            </section>
-            <section class="text-center">
+            <section class="elements-title space--xxs text-center">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-11">
-                            <div class="slider border--round" data-arrows="true" data-paging="true">
-                                <ul class="slides">
-                                    <li>
-                                        <img alt="Image" src="img/Smart_Cane_CAD.JPG" />
-                                    </li>
-                                    <li>
-                                        <img alt="Image" src="img/Smart_Cane_Enclosure.JPG" />
-                                    </li>
-                                    <li>
-                                        <img alt="Image" src="img/about_company.JPG" />
-                                    </li>
-                                </ul>
-                            </div>
+                        <div class="col-md-12">
+                            <h6 class="type--uppercase">Parts
+                                <i class="stack-down-dir"></i>
+                            </h6>
                         </div>
                     </div>
                     <!--end of row-->
                 </div>
                 <!--end of container-->
             </section>
-            <section class="text-center bg--secondary">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-10 col-lg-8">
-                            <h2>What drives us</h2>
-                            <p class="lead">
-                                This system accounts for portability, providing audio and haptic feedback, proactively preventing falls, being reliable against misplacement, detecting obstacles, and being comfortable during use. 
-                            </p>
+            <div class="tabs-container text-center" data-content-align="left">
+                <ul class="tabs">
+                    <li class="active">
+                        <div class="tab__title">
+                            <span class="h5">LiDAR-based SLAM</span>
                         </div>
-                    </div>
-                    <!--end of row-->
+                        <div class="tab__content">
+                            <section class="space--xs ">
+                                <div class="container">
+                                    <div class="cta cta--horizontal text-center-xs row">
+                                            <p class="lead">
+                                                Uses Lidar and IMU. This uses a hobbyist Lidar from SLAMtech. It is relatively cheap, produces more accurate measurements, has a bigger range, and uses point cloud to find walls for feedback.
+                                            
+                                            </p>
+                                            <div class="cta cta--horizontal text-center-xs row">
+                                                <body>
+                                                    <div style="width:400px; margin:0 auto;">
+                                                        
+                                                    </div>
+                                                </body>
+                                            
+                                                <p style="text-align:center;">
+                                            <img src="img/Lidar-based_slam.jpg" />
+                                            </div>
+                                        </p>
+                                        </div>
+                                </div>
+                                <!--end of container-->
+                            </section>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tab__title">
+                            <span class="h5">Object Detection</span>
+                        </div>
+                        <div class="tab__content">
+                            <section class="space--xs bg--dark">
+                                <div class="container">
+                                    <div class="cta cta--horizontal text-center-xs row">
+                                        <p class="lead">
+                                                There is a pre-trained deep learning model (YoloFastestV2) for object detection as there is very high frame rates achieved with acceptable accuracy.
+                                            </p> 
+                                            <body>
+                                                <div style="width:400px;">
+                                                    
+                                                </div>
+                                            </body>
+                                            <div class="cta cta--horizontal text-center-xs row">
+                                                <p style="text-align:center;">
+                                                <img alt="Image"  class="center" src="img/yolofastestv2.jpg" />
+                                            </div>   
+                                    </div>
+                                </div>
+                                <!--end of container-->
+                            </section>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tab__title">
+                            <span class="h5">Communicate Obstacles</span>
+                        </div>
+
+                        <div class="tab__content">
+                            <section class="space--xs bg--dark">
+                                <div class="container">
+                                    <div class="cta cta--horizontal text-center-xs row">
+                                        <p class="lead">
+                                            There are pre-recorded audio recordings for the earpiece
+                                            </p> 
+                                            <body>
+                                                <div style="width:25px;">
+                                                    
+                                                </div>
+                                            </body>
+                                            <div class="cta cta--horizontal text-center-xs row">
+                                                <p style="text-align:center;">
+                                                <img alt="Image"  class="center" src="img/audio_recording.jpg" />
+                                            </div>   
+                                    </div>
+                                </div>
+                                <!--end of container-->
+                            </section>
+                        </div>
+
+
+                        <div class="tab__content">
+                            <section class="space--xs imagebg" data-overlay='4'>
+                                <div class="background-image-holder">
+                                    <img alt="background" src="img/hero-1.jpg" />
+                                </div>
+                                <div class="container">
+                                    
+                                    <body>
+                                        <div style="width:200px;">
+                                            
+                                        </div>
+                                    </body>
+                                    <div class="cta cta--horizontal text-center-xs row">
+                                        <p class="lead">
+                                            There are pre-recorded audio recordings for the earpiece
+                                        </p>
+                                        <p>
+
+                                        </p>
+                                        
+                                        <body>
+                                            <div style="width:50px;">
+                                                
+                                            </div>
+                                        </body>
+                                        <div class="cta cta--horizontal text-center-xs row">
+                                            <p style="text-align:center;">
+                                            <img alt="Image"  class="center" src="img/audio_recording.jpg" />
+                                        </div>  
+                                    </div>
+                                </div>
+                                <!--end of container-->
+                            </section>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <footer class="footer-3 text-center-xs space--xs">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img alt="Image" class="logo" src="img/Smart-Cane_logo.JPG" />
+                    <ul class="list-inline list--hover">
+                      <li class="list-inline-item">
+                        <a href="about-product.html">
+                          <span class="type--fine-print">Get Started</span>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="mailto:help@smartcane.io">
+                          <span class="type--fine-print">help@smartcane.io</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 text-right text-center-xs">
+                    <ul class="social-list list-inline list--hover">
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="socicon socicon-google icon icon--xs"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="socicon socicon-twitter icon icon--xs"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="socicon socicon-facebook icon icon--xs"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="socicon socicon-instagram icon icon--xs"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <!--end of container-->
-            </section>
-            <section class="bg--secondary">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="feature">
-                                <h4>Inclusion</h4>
-                                <p>
-                                    The visually-impaired should be able to go on longer walks without fear of falling. 
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="feature">
-                                <h4>Ingenuity</h4>
-                                <p>
-                                    Using our Mechatronics Engineering background, we understood how to use deep learning, sensor fusion, and mechanical and electrical hardware to build a prototype.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="feature">
-                                <h4>Innovation</h4>
-                                <p>
-                                    Our work builds on market searches and previous state-of-the-art patents. We enable novel short-range and long-range obstacle avoidance. 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end of row-->
+                <!--end of row-->
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="type--fine-print">Building the next white cane.</p>
+                  </div>
+                  <div class="col-md-6 text-right text-center-xs">
+                    <span class="type--fine-print"
+                      >&copy; <span class="update-year"></span> Smart Cane Inc.</span
+                    >
+                    <a class="type--fine-print" href="#">Privacy Policy</a>
+                    <a class="type--fine-print" href="#">Legal</a>
+                  </div>
                 </div>
-                <!--end of container-->
-            </section>
-            </div>
-      <footer class="footer-3 text-center-xs space--xs bg--dark">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 text-right text-center-xs">
-              <ul class="social-list list-inline list--hover">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="socicon socicon-google icon icon--xs"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="socicon socicon-twitter icon icon--xs"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="socicon socicon-facebook icon icon--xs"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="socicon socicon-instagram icon icon--xs"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!--end of row-->
-          <div class="row">
-            <div class="col-md-6">
-              <p class="type--fine-print">Get advanced smart cane.</p>
-            </div>
-            <div class="col-md-6 text-right text-center-xs">
-              <span class="type--fine-print"
-                >&copy; <span class="update-year"></span> Smart Cane Inc.</span
-              >
-              <a class="type--fine-print" href="#">Privacy Policy</a>
-              <a class="type--fine-print" href="#">Legal</a>
-            </div>
-          </div>
-          <!--end of row-->
-        </div>
-        <!--end of container-->
-      </footer>
+                <!--end of row-->
+              </div>
+              <!--end of container-->
+            </footer>
         </div>
         <!--<div class="loader"></div>-->
         <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
